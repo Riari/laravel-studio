@@ -22,8 +22,8 @@
         ],
         "psr-4": {
             "App\\": "app/",
-            "Riari\\Forum\\": "../laravel-forum/src",
-            "Riari\\Forum\\Frontend\\": "../laravel-forum-frontend/src"
+            "Riari\\Forum\\": "packages/laravel-forum/src",
+            "Riari\\Forum\\Frontend\\": "packages/laravel-forum-frontend/src"
         }
     },
     "autoload-dev": {
