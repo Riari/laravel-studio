@@ -9,6 +9,8 @@ services:
       - MYSQL_DATABASE=studio
       - MYSQL_USER=studio
       - MYSQL_PASSWORD=secret
+    ports:
+      - "3306:3306"
 
   laravel-studio-webserver:
     image: phpdockerio/nginx:latest
