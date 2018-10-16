@@ -18,7 +18,7 @@ class AddLastRepliedAtToThreadsTable extends Migration
             $table->timestamp('last_replied_at')->nullable()->after('reply_count');
         });
 
-        DB::table('forum_threads')->update(['last_replied_at' => DB::raw('`updated_at`')]);
+        DB::table('forum_threads')->where('reply_count', '>', 0)->update(['last_replied_at' => DB::raw('`updated_at`')]);
     }
 
     /**
