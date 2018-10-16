@@ -19,3 +19,7 @@ Route::get('auth/{id}', function ($id) {
     Auth::login(\App\User::find($id));
     return redirect('forum');
 });
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
