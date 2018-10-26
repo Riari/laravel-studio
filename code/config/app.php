@@ -160,8 +160,6 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
         Riari\Forum\ForumServiceProvider::class,
-        Riari\Forum\ForumServiceProvider::class,
-        Riari\Forum\Frontend\ForumFrontendServiceProvider::class,
 
     ],
 
